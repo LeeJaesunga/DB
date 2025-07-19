@@ -545,6 +545,12 @@ header {
     box-sizing: border-box;
 }
 
+.more_btn_img {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
 .contents__img {
     position: absolute;
     bottom: 30px;
@@ -585,6 +591,10 @@ header {
     border-radius: 50px;
     padding: 0.3rem;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+.control_box02 {
+
 }
 
 .swiper_button_prev {
@@ -977,8 +987,15 @@ color: #1776E1;
     color: #777777;
 }
 
+.grid .col_6 {
+    width: calc(100% / 12 * 6 - 15px);
+}
+
+
 .onlineCenter_box {
     position: relative;
+    /* margin-left: -83px; */
+    margin-bottom: 0px;
     min-height: 200px;
     background-image: linear-gradient(to right, #76c6db 0%, #659ade 100%);
     background-repeat: no-repeat;
@@ -990,19 +1007,32 @@ color: #1776E1;
     border-radius: 14px;
 }
 
-.onlineCenter_box img {
+.onlineCenter_box_imgs {
     display: block;
-    width: 20px;
-    height: 20px;
+    position: absolute;
+    top: calc(50% - 68px);
+    left: 3rem;
+    width: 300px;
+    height: 136px;
 }
 
 #contents2 .more_btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 3rem;
+    left: 545px;
     max-width: 200px;
     background: #68a3dd;
+    border-radius: 70px;
+    padding: 1rem;
+    width: 180px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    color: #fff;
 }
 
 .more_btn_wh {
@@ -1016,11 +1046,24 @@ color: #1776E1;
 
 .swiper_container6 {
     min-height: 200px;
+    overflow: hidden;
     position: relative;
     padding-top: 48px;       
     padding-left: 6.4px;     
     padding-bottom: 6.4px;   
     padding-right: 6.4px;    
+}
+
+.swiper_container6 .control_box02 {
+    position: absolute;
+    top: 7px;
+    bottom: auto;
+    left: auto;
+    right: 41px;
+    transform: none;
+    border-radius: 50px;
+    padding: 0.3rem;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .swiper_wrapper02 {
@@ -1035,7 +1078,7 @@ color: #1776E1;
 
 .swiper_slide03 {
     display: flex;
-    width: 209.667px;
+    width: 241.667px;
     height: auto;
     margin-right: 20px;
     flex-shrink: 0;
